@@ -1,6 +1,6 @@
 {
    "name": "feathers-nuxt",
-   "description": "Feathers Nuxt Integration",
+   "description": "FeathersJS Auk Integrated with NuxtJS",
    "version": "0.0.0",
    "homepage": "",
    "main": "src",
@@ -19,6 +19,12 @@
    "engines": {
       "node": ">= 6.0.0",
       "yarn": ">= 0.18.0"
+   },
+   "config": {
+      "nuxt": {
+         "host": "localhost",
+         "port": "3030"
+      }
    },
    "scripts": {
       "build": "nuxt build",
