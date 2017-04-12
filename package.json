@@ -1,0 +1,55 @@
+{
+   "name": "feathers-nuxt-integration",
+   "description": "Feathers Nuxt Integration",
+   "version": "0.0.0",
+   "homepage": "",
+   "main": "src",
+   "keywords": [
+      "feathers"
+   ],
+   "author": {
+      "name": "",
+      "email": ""
+   },
+   "contributors": [],
+   "bugs": {},
+   "directories": {
+      "lib": "src"
+   },
+   "engines": {
+      "node": ">= 6.0.0",
+      "yarn": ">= 0.18.0"
+   },
+   "scripts": {
+      "build": "nuxt build",
+      "dev": "DEBUG=nuxt:* nodemon --watch src/ --watch config/ src/index.js",
+      "prestart": "npm run build",
+      "start": "NODE_ENV=production node src/",
+      "test": "npm run eslint && npm run mocha",
+      "eslint": "eslint src/. test/. --config .eslintrc.json",
+      "mocha": "mocha test/ --recursive"
+   },
+   "dependencies": {
+      "body-parser": "^1.17.1",
+      "compression": "^1.6.2",
+      "cors": "^2.8.3",
+      "eslint": "^3.19.0",
+      "feathers": "^2.1.1",
+      "feathers-configuration": "^0.4.1",
+      "feathers-errors": "^2.6.3",
+      "feathers-hooks": "^1.8.1",
+      "feathers-hooks-common": "^3.0.0",
+      "feathers-rest": "^1.7.2",
+      "feathers-socketio": "^1.5.2",
+      "helmet": "^3.5.0",
+      "mocha": "^3.2.0",
+      "nuxt": "^0.10.5",
+      "request": "^2.81.0",
+      "request-promise": "^4.2.0",
+      "serve-favicon": "^2.4.2",
+      "winston": "^2.3.1"
+   },
+   "devDependencies": {
+      "nodemon": "^1.11.0"
+   }
+}
