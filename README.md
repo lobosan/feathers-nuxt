@@ -1,4 +1,4 @@
-# feathers-nuxt-integration
+# feathers-nuxt
 
 > Feathers Nuxt Integration
 
